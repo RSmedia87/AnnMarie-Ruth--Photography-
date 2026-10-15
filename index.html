@@ -79,6 +79,8 @@
         }
 
         .bio-text {
+            list-style: none;
+            padding: 0;
             font-size: 0.95rem;
             color: var(--text-muted);
             max-width: 420px;
@@ -87,6 +89,10 @@
             line-height: 1.5;
         }
 
+        .bio-text li {
+            margin-bottom: 6px;
+        }
+        
         .section-title {
             font-family: var(--font-serif);
             font-size: 1.5rem;
@@ -191,8 +197,11 @@
         
         <h1 class="brand-title">AnnMarie Photography</h1>
         <p class="brand-subtitle">Portrait & Event Photography</p>
-        <p class="bio-text">Creating honest, timeless portraiture for individuals, couples, and events.   Based in the Hocking Hills region of central Ohio.   Travel options available upon request.</p>
-    </header>
+        <ul class="bio-text">
+            <li>Creating honest & timeless portraits for individuals, couples, and families</li>
+            <li>Based in beautiful Hocking Hills, Ohio</li>
+            <li>Travel options are available upon request</li>
+        </ul>     
 
     <main>
         <h2 class="section-title">Packages & Investment</h2>
