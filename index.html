@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnnMarie Photography | Investment & Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #F4F5EE;          /* Sage mist / soft warm linen */
+            --card-bg: #FFFFFF;          /* Pure white card surface */
+            --text-main: #232B25;        /* Deep forest charcoal */
+            --text-muted: #5C6F61;       /* Muted sage leaf */
+            --accent-green: #2D3B32;     /* Evergreen */
+            --accent-earth: #A66E53;     /* Earthy terracotta / warm rust */
+            --border-color: #E2E5DC;     /* Soft botanical border */
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            padding: 32px 16px 48px;
+            max-width: 540px;
+            margin: 0 auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 36px;
+            padding-top: 12px;
+        }
+
+        .portrait-frame {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(45, 59, 50, 0.08);
+            border: 3px solid #FFFFFF;
+        }
+
+        .portrait-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .brand-title {
+            font-family: var(--font-serif);
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: var(--accent-green);
+            margin-bottom: 4px;
+        }
+
+        .brand-subtitle {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            font-weight: 600;
+        }
+
+        .bio-text {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            max-width: 420px;
+            margin: 0 auto;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 24px;
+            letter-spacing: 0.04em;
+            color: var(--accent-green);
+        }
+
+        .packages-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 36px;
+        }
+
+        .package-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(45, 59, 50, 0.03);
+        }
+
+        .package-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 14px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .package-name {
+            font-family: var(--font-serif);
+            font-size: 1.45rem;
+            font-weight: 600;
+            color: var(--accent-green);
+        }
+
+        .package-price {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--accent-earth);
+        }
+
+        .package-features {
+            list-style: none;
+        }
+
+        .package-features li {
+            font-size: 0.9rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .package-features li::before {
+            content: "🌿";
+            font-size: 0.8rem;
+            line-height: 1.5;
+        }
+
+        .cta-section {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-green);
+            color: #FFFFFF;
+        }
+
+        .footer-note {
+            margin-top: 36px;
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="profile-header">
+        <div class="portrait-frame">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="AnnMarie Photography">
+        </div>
+        
+        <h1 class="brand-title">AnnMarie Photography</h1>
+        <p class="brand-subtitle">Portrait & Editorial Photography</p>
+        <p class="bio-text">Creating honest, timeless portraiture for individuals, couples, and brands. Based in the Hocking Hills region of central Ohio. Travel options available upon request.</p>
+    </header>
+
+    <main>
+        <h2 class="section-title">Packages & Investment</h2>
+        
+        <div class="packages-container">
+            
+            <div class="package-card">
+                <div class="package-header">
+                    <h3 class="package-name">Standard Portrait</h3>
+                    <span class="package-price">$250</span>
+                </div>
+                <ul class="package-features">
+                    <li>60-minute outdoor session</li>
+                    <li>15 high-resolution edited images</li>
+                    <li>1 location & 2 outfit changes</li>
+                </ul>
+            </div>
+
+            <div class="package-card">
+                <div class="package-header">
+                    <h3 class="package-name">Mini Session</h3>
+                    <span class="package-price">$100</span>
+                </div>
+                <ul class="package-features">
+                    <li>30-minute quick session</li>
+                    <li>7 high-resolution edited images</li>
+                    <li>Online delivery within 5 business days</li>
+                    <li>1 single location</li>
+                </ul>
+            </div>
+
+            <div class="package-card">
+                <div class="package-header">
+                    <h3 class="package-name">Weddings & Events</h3>
+                    <span class="package-price">$800–$1,200</span>
+                </div>
+                <ul class="package-features">
+                    <li>Half-day & full-day custom packages</li>
+                    <li>Sneak peek gallery delivered within 2 days</li>
+                    <li>Perfect for intimate weddings, elopements, and bespoke celebrations</li>
+                    <li>Includes complimentary engagement session</li>
+                    <li>Custom quotes available upon request</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="cta-section">
+            <a href="mailto:annmarie.covell@aol.com" class="btn btn-primary">Send an Email Inquiry</a>
+        </div>
+    </main>
+
+    <footer class="footer-note">
+        <p>© 2026 AnnMarie Photography. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
